@@ -1,6 +1,113 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: none;
+}
+
+/* FUENTES Y TAMAÑOS */
+
+h1, h2, h3, a {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-size: 250%;
+    font-weight: 500;
+}
+
+#derechos {
+    font-size: 1.5vw;
+}
+
+
+/* DEFINO GRID EN TODO EL BODY */
+body {
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-areas:
+        "header_"
+        "main_"
+        "footer_";           
+}
+
+/* LINKEO GRID A SUS RESPECTIVAS PARTES  */
+header {
+    grid-area: "header_";
+    background-color: #7B77F2;
+}
+
+main {
+    grid-area: "main_";
+}
+
+footer{
+    grid-area: "footer_";
+    background-color: #7B77F2;
+}
+
+
+/* TRABAJO CON EL HEADER */
+.logo {
+    width: 8vw;
+}
+
+nav, footer, .lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.lista li {
+    font-size: 1.8vw;
+    padding: 1.5vw 4vw;
+    list-style-type: none;
+}
+
+.lista li:hover {
+    background-color: #6bccf1;
+}
+
+#mainIndex, #mainContactanos {
+    display: flex;
+    flex-direction: row;
+}
+
+#mainNosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+#mainNosotros img {
+    width: 30vw;
+}
+
+.fondoColorV, .formulario {
+    background-color: #AC99F2;
+}
+
+.fondoColorV {
+    display: flex;
+    flex-direction: row;
+}
+
+.video video {
+    width: 40vw;
+}
+
+.seccionContactanos {
+    height: 8vw;
+    background-color: #6bccf1;
+}
+
+.boton {
+    font-size: 200%;
+    padding: 1vw 5vw;
+    border: 2px double #7B77F2;
+    background-color: #79DCF2;
 }
 
 

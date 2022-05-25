@@ -36,10 +36,10 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <a href="./index.html">
-                    <img src="./multimedia/code-factory-logo.png" alt="logo">
-                </a>
+            <a href="./index.html">
+                <img class="logo" src="./multimedia/code-factory-logo.png" alt="logo">
+            </a>
+            <ul class="lista">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./archivos-html/nosotros.html">Nosotros</a></li>
                 <li><a href="./archivos-html/contactanos.html">Contactanos</a></li> 
@@ -47,27 +47,31 @@
         </nav>
     </header>
 
-    <div>
+    <main  class="fondoColorV" id="mainIndex">
 
-        <div>
+        <div class="info">
             <h1>{ DALE UN IMPULSO A TU NEGOCIO }</h1>
              
             <h2>¡Conocé la mejor opción para crear o modernizar tu Sitio Web y llegá a más clientes! </h2>
 
             <p> Trabajamos en cada uno de los proyectos de forma personalizada, adaptándonos a tus necesidades y sugerencias, con el compromiso y calidad que te merecés. </p>
-
-            <a href="./archivos-html/nosotros.html"> CONOCENOS </a>
         <div>
 
-        <div  class="video"> <!-- VIDEO LOOP -->
-            <video width="500" height="350" autoplay>
+        <div  class="video">
+            <video autoplay>
                 <source src="./multimedia/video-logo.mp4" type="video/mp4" name="video">
             </video> 
         </div>
-    </div> 
+    </main> 
+
+        <div class="seccionContactanos">
+            <a class="boton" href="./archivos-html/nosotros.html"> CONOCENOS </a>
+        </div>
     
      <footer>
-        <ul>
+        <p id="derechos">©2022 - J. de la Cruz</p>
+        
+        <ul class="lista">
             <li>
                 <a href="https://www.instagram.com/j.delacruz26/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>

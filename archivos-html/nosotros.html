@@ -32,13 +32,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../archivos-css/style.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <ul>
-                <a href="../index.html">
-                    <img src="../multimedia/code-factory-logo.png" alt="logo">
-                </a>
+            <a href="../index.html">
+                <img class="logo" src="../multimedia/code-factory-logo.png" alt="logo">
+            </a>
+            <ul class="lista">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./contactanos.html">Contactanos</a></li> 
@@ -92,50 +93,56 @@
             </div>
         </div>
 
-    <div>
-        <img src="../multimedia/andrew-neel-9moikpaufvg-unsplash.jpg" alt="espacio">
+        <div class="fondoColorV">
+            <div>
+                <img src="../multimedia/andrew-neel-9moikpaufvg-unsplash.jpg" alt="espacio">
+            </div>
 
-        <h2>{ PREGUNTAS FRECUENTES }</h2>
-
-        <div>
-            <h3>¿Cómo puedo consultar un presupuesto para mi web?</h3>
-            <i class="fa-regular fa-file-code"></i>
-            <p>Podés acercarte a nuestras oficinas en o nos podes mandar un mensaje completando nuestro formulario y uno de nuestros asesores se estará comunicando con vos vía Whatsapp de lunes a viernes de 9 a 17 hs.</p>
+            <div>
+                <h2>{ PREGUNTAS FRECUENTES }</h2>
+                
+                <div>
+                    <h3>¿Cómo puedo consultar un presupuesto para mi web?</h3>
+                    <i class="fa-regular fa-file-code"></i>
+                    <p>Podés acercarte a nuestras oficinas en o nos podes mandar un mensaje completando nuestro formulario y uno de nuestros asesores se estará comunicando con vos vía Whatsapp de lunes a viernes de 9 a 17 hs.</p>
+                </div>
+                
+                <div>
+                    <h3>¿Tengo que pagar por el presupuesto?</h3>
+                    <i class="fa-regular fa-file-excel"></i>
+                    <p>No, no cobramos por este servicio.</p>
+                </div>
+                
+                <div>
+                    <h3>¿Debo dejar una seña?</h3>
+                    <i class="fa-regular fa-handshake"></i>
+                    <p>Sí, así es. La misma te garantizará el desarrollo de tu web en el tiempo pactado.</p>
+                </div>
+                
+                <div>
+                    <h3>¿En cuánto tiempo tengo mi web lista? </h3>
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <p>El tiempo de desarrollo es independiente en cada trabajo, debido a las diferentes tareas que el cliente nos pueda llegar a encomendar.</p>
+                </div>
+                
+                <div>
+                    <h3>¿Cuáles son los medios de pago?</h3>
+                    <i class="fa-regular fa-credit-card"></i>
+                    <p>Aceptamos efectivo, Mercado Pago, o transferencia bancaria.</p>
+                </div>
+                
+            </div>
         </div>
-        
-        <div>
-            <h3>¿Tengo que pagar por el presupuesto?</h3>
-            <i class="fa-regular fa-file-excel"></i>
-            <p>No, no cobramos por este servicio.</p>
+            
+        <div class="seccionContactanos">
+            <a class="boton" href="./contactanos.html"> CONTACTANOS PARA SABER MÁS </a>
         </div>
-        
-        <div>
-            <h3>¿Debo dejar una seña?</h3>
-            <i class="fa-regular fa-handshake"></i>
-            <p>Sí, así es. La misma te garantizará el desarrollo de tu web en el tiempo pactado.</p>
-        </div>
-
-        <div>
-            <h3>¿En cuánto tiempo tengo mi web lista? </h3>
-            <i class="fa-regular fa-calendar-check"></i>
-            <p>El tiempo de desarrollo es independiente en cada trabajo, debido a las diferentes tareas que el cliente nos pueda llegar a encomendar.</p>
-        </div>
-
-        <div>
-            <h3>¿Cuáles son los medios de pago?</h3>
-            <i class="fa-regular fa-credit-card"></i>
-            <p>Aceptamos efectivo, Mercado Pago, o transferencia bancaria.</p>
-        </div>
-
-    </div>
-    
-    <div>
-        <a href="./contactanos.html"> CONTACTANOS PARA SABER MÁS </a>
-    </div>
     </main>
     
     <footer>
-        <ul>
+        <p id="derechos">©2022 - J. de la Cruz</p>
+        
+        <ul class="lista">
             <li>
                 <a href="https://www.instagram.com/j.delacruz26/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
@@ -152,8 +159,6 @@
                 </a>
             </li> 
          </ul>
-        
-         <p>©2022 - J. de la Cruz</p>
     </footer>
 </body>
 
