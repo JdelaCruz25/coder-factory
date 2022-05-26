@@ -336,7 +336,7 @@ main {
     margin-bottom: 0.5vw;
 }
 
-input {
+input, textarea {
     background-color: white;
 }
 
