@@ -3,21 +3,18 @@
     margin: 0;
     font-family: 'Source Serif Pro', serif;
     text-decoration: none;
+    list-style-type: none;
 }
 
-/* FUENTES Y TAMAÑOS */
 
-h1, h2, h3, a {
+/* FUENTES Y TAMAÑOS */
+h1, h2, h3, a, label {
     font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
     font-size: 250%;
     font-weight: 500;
-}
-
-#derechos {
-    font-size: 1.5vw;
 }
 
 
@@ -47,9 +44,12 @@ footer{
 }
 
 
-/* TRABAJO CON EL HEADER */
+/* -------------------- 
+    HEADER Y FOOTER
+-------------------- */
 .logo {
     width: 8vw;
+    padding-left: 0.5vw;
 }
 
 nav, footer, .lista {
@@ -59,19 +59,37 @@ nav, footer, .lista {
     justify-content: space-between;
 }
 
-
+#derechos {
+    font-size: 1.5vw;
+    padding-left: 1vw;
+}
 
 .lista li {
     font-size: 1.8vw;
-    padding: 1.5vw 4vw;
-    list-style-type: none;
+    padding: 1.5vw 0vw;
+}
+
+.lista li a {
+    padding: 1.5vw 3vw;
 }
 
 .lista li:hover {
     background-color: #6bccf1;
 }
 
-#mainIndex, #mainContactanos {
+.lista li a:active {
+    color: white;
+}
+
+
+/* -------------------- 
+         BODY 
+-------------------- */
+main {
+    margin: 0vw 2vw;
+}
+
+#mainIndex {
     display: flex;
     flex-direction: row;
 }
@@ -94,20 +112,193 @@ nav, footer, .lista {
     flex-direction: row;
 }
 
+.seccionCeleste {
+    height: 8vw;
+    background-color: #6bccf1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.boton, h2 {
+    height: 2vw;
+    font-size: 200%;
+    padding: 1.5vw 5vw 1vw 5vw;
+    border: 3px solid #7B77F2;
+    background-color: #79DCF2;
+}
+
+.boton {
+    margin-top: 1.5vw;
+}
+
+.boton:hover{
+    background-color: #7B77F2;
+    color: black;
+}
+
+.iconos {
+    color: #551A8B;
+}
+
+/* -------------------- 
+        INDEX 
+-------------------- */
 .video video {
     width: 40vw;
 }
 
-.seccionContactanos {
-    height: 8vw;
-    background-color: #6bccf1;
+/* -------------------- 
+        NOSOTROS 
+-------------------- */
+.preguntasFrecuentes{
+    font-size: 0.7vw;
+    display: grid;
+    grid-row-gap: 1vw;
+    grid-template-areas:
+        "p0_ p0_"
+        "p1_ p4_"
+        "p3_ p5_"
+        "p2_ p5_";    
 }
 
-.boton {
-    font-size: 200%;
-    padding: 1vw 5vw;
-    border: 2px double #7B77F2;
+.preguntasFrecuentes div .iconos {
+    font-size: 3vw;
+}
+
+.seccionPreguntas {
+    padding: 0vw 2vw;
+}
+
+.p0 {
+    grid-area: p0_;
+    font-size: 3vw;
+    color: #551A8B;
+    justify-self: center;
+    padding: 1.5vw 12.6vw 2vw 12.6vw;
+}
+
+.p1 {
+    grid-area: p1_;
+}
+
+.p2 {
+    grid-area: p2_;
+    padding-bottom: 1vw;
+}
+
+.p3 {
+    grid-area: p3_;
+}
+
+.p4 {
+    grid-area: p4_;
+}
+
+.p5 {
+    grid-area: p5_;
+}
+
+.preguntas {
+    display: flex;
+    padding-bottom: 0.5vw;
+}
+
+.preguntas h3 {
+    align-self: center;
+    padding: 0.3vw 0vw 0vw 1vw;
+    font-size: 1.5vw;
+}
+
+
+/* -------------------- 
+      CONTACTANOS
+-------------------- */
+
+#mainContactanos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+    justify-content: center;
+}
+
+.mensajeContacto {
+    font-size: 3vw;
+    text-align: center;
+    line-height: 6vw;
+}
+
+.infoContactanos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5vw;
+    padding: 2vw;
+    margin-bottom: 2vw;
+
+    border: 2px solid #7B77F2;
     background-color: #79DCF2;
 }
+
+.infoContactanos div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.infoContactanos div .iconos {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+.infoContactanos div p {
+    font-size: 2vw;
+}
+
+.mapa {
+    width: 50vw;
+    height: 28.2vw;
+}
+
+.formulario {
+    padding: 3vw;
+}
+
+.formulario div {
+    padding: 0.5vw 0vw;
+}
+
+.formulario div label {
+    font-size: 1.6vw;
+}
+
+.formulario div .ingreso {
+    display: block;
+    width: 35vw;
+    font-size: 1.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.motivo div label {
+    font-size: 1.4vw;
+    margin-right: 1vw;
+}
+
+.motivo div input {
+    margin-left: 0.5vw;
+}
+
+.botones input {
+    width: 13vw;
+    margin: 2vw 0 0 3vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.botones input:hover {
+    background-color: #551A8B;
+    color: white;
+}
+
 
 
