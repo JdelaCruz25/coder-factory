@@ -197,9 +197,10 @@ main {
 }
 
 .celeste {
-    width: 49.3vw;
+    width: 49.7vw;
     font-size: 2.5vw;
     text-align: center;
+    border: 0px;
 }
 
 .preguntasFrecuentes{
