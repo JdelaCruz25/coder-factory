@@ -97,7 +97,7 @@ h1, h2, h3, a, label {
         margin: 0vw 4vw;
     }
     
-    .fondoColorV, .formulario {
+    .fondoColorV {
         margin-top: -6vw;
         background-color: #AC99F2;
     }
@@ -280,23 +280,24 @@ h1, h2, h3, a, label {
     
     #mainContactanos {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         column-gap: 3vw;
         justify-content: center;
     }
     
     .mensajeContacto {
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: center;
-        line-height: 7vw;
+        line-height: 15vw;
+        margin-top: -5vw;
     }
     
     .infoContactanos {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        column-gap: 5vw;
-        margin-bottom: 2vw;
+        column-gap: 2.5vw;
+        margin-bottom: 6vw;
         text-align: center;
     }
     
@@ -304,70 +305,77 @@ h1, h2, h3, a, label {
         display: flex;
         flex-direction: column;
         align-content: center;
-        width: 20vw;
-        padding: 1vw;
-        border: 2px solid #551A8B;
+        width: 40vw;
+        padding: 2vw;
+        border: 1px solid #551A8B;
         background-color: #79DCF2;
     }
     
     .infoContactanos div .iconos {
-        font-size: 3vw;
-        margin-bottom: 1vw;
+        font-size: 6vw;
+        margin-bottom: 3vw;
     }
     
     .infoContactanos div p {
-        font-size: 2vw;
+        font-size: 4vw;
     }
     
     .mapa {
-        width: 50vw;
-        height: 26.7vw;
+        width: 92vw;
+        height: 30vw;
     }
     
     .formulario {
-        padding: 3vw;
+        background-color: #AC99F2;
+        padding: 5vw;
     }
     
     .formulario div {
-        padding: 0.5vw 0vw;
+        text-align: center;
+        padding: 1vw 0vw;
     }
     
     .formulario div label {
-        font-size: 1.6vw;
+        font-size: 3vw;
     }
     
     .formulario div .ingreso {
         display: block;
-        width: 35vw;
-        font-size: 1.5vw;
+        width: 81vw;
+        font-size: 3vw;
         margin-bottom: 0.5vw;
     }
-    
+
+    .formulario div input {
+        height: 4vw;
+    }
+
+    .formulario div textarea {
+        height: 30vw;
+    }
+   
     input, textarea {
         background-color: white;
     }
     
     .motivo div label {
-        font-size: 1.4vw;
-        margin-right: 1vw;
-    }
-    
-    .motivo div input {
-        margin-left: 0.5vw;
-    }
-    
-    .botones input {
-        width: 13vw;
-        margin: 2vw 0 0 3vw;
-        font-size: 1.5vw;
-        font-weight: 600;
-    }
-    
-    .botones input:hover {
-        background-color: #551A8B;
-        color: white;
+        font-size: 3vw;
     }
 
+    .radio {
+        margin-left: 8vw;
+    }
+
+    .motivo div input {
+        width: 3.5vw;
+    }
+   
+    .botones input {
+        width: 30vw;
+        margin: 2vw 0 0 3vw;
+        font-size: 2vw;
+        font-weight: 600;
+    }
 
 
 /* -------------------- 
@@ -441,7 +449,6 @@ h1, h2, h3, a, label {
     }
        
     .fondoColorV {
-        display: flex;
         flex-direction: row;
     }
     
@@ -465,7 +472,6 @@ h1, h2, h3, a, label {
             INDEX 
     -------------------- */
     #mainIndex {
-        display: flex;
         flex-direction: row;
 /*         font-size: 1vw; */
     }
@@ -498,7 +504,6 @@ h1, h2, h3, a, label {
             NOSOTROS 
     -------------------- */
     #mainNosotros{
-        display: flex;
         flex-direction: column;
     }
     
@@ -507,7 +512,6 @@ h1, h2, h3, a, label {
     }
     
     .nosotros {
-        display: flex;
         flex-direction: row;
         margin-bottom: 5vw;
     }
@@ -596,35 +600,29 @@ h1, h2, h3, a, label {
     -------------------- */
     
     #mainContactanos {
-        display: flex;
         flex-direction: row;
         column-gap: 3vw;
-        justify-content: center;
     }
     
     .mensajeContacto {
         font-size: 3vw;
         text-align: center;
         line-height: 7vw;
+        margin-top: 0vw;
     }
     
     .infoContactanos {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
         column-gap: 5vw;
         margin-bottom: 2vw;
         text-align: center;
     }
     
     .infoContactanos div {
-        display: flex;
         flex-direction: column;
-        align-content: center;
         width: 20vw;
         padding: 1vw;
         border: 2px solid #551A8B;
-        background-color: #79DCF2;
     }
     
     .infoContactanos div .iconos {
@@ -658,10 +656,6 @@ h1, h2, h3, a, label {
         width: 35vw;
         font-size: 1.5vw;
         margin-bottom: 0.5vw;
-    }
-    
-    input, textarea {
-        background-color: white;
     }
     
     .motivo div label {
