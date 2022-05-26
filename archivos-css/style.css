@@ -89,20 +89,6 @@ main {
     margin: 0vw 2vw;
 }
 
-#mainIndex {
-    display: flex;
-    flex-direction: row;
-}
-
-#mainNosotros{
-    display: flex;
-    flex-direction: column;
-}
-
-#mainNosotros img {
-    width: 30vw;
-}
-
 .fondoColorV, .formulario {
     background-color: #AC99F2;
 }
@@ -120,7 +106,7 @@ main {
     align-content: center;
 }
 
-.boton, h2 {
+.boton, .celeste {
     height: 2vw;
     font-size: 200%;
     padding: 1.5vw 5vw 1vw 5vw;
@@ -144,13 +130,78 @@ main {
 /* -------------------- 
         INDEX 
 -------------------- */
-.video video {
-    width: 40vw;
+#mainIndex {
+    display: flex;
+    flex-direction: row;
+    font-size: 1vw;
 }
+
+.titulosIndex {
+    text-align: center;
+    font-size: 1.1vw;
+    padding: 2vw;
+    margin: 4vw 0.1vw 2.7vw 3vw ;
+
+    background-color: #79DCF2;
+}
+
+.titulosIndex h1 {
+    margin-bottom: 1vw;
+}
+
+.titulosIndex h2 {
+    font-weight: 500;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info p {
+    font-size: 1.7vw;
+    text-align: justify;
+    margin: 1vw 3vw 3vw 5vw ;
+}
+
+
+.video video {
+    width: 43vw;
+}
+
 
 /* -------------------- 
         NOSOTROS 
 -------------------- */
+#mainNosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+#mainNosotros img {
+    width: 35vw;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vw;
+}
+.nosotros p, .nuestroTrabajo {
+    padding: 2vw;
+    font-size: 2vw;
+}
+
+.nuestroTrabajo {
+    line-height: 3.5vw;
+}
+
+.celeste {
+    width: 49.3vw;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
 .preguntasFrecuentes{
     font-size: 0.7vw;
     display: grid;
@@ -160,6 +211,10 @@ main {
         "p1_ p4_"
         "p3_ p5_"
         "p2_ p5_";    
+}
+
+.preguntasFrecuentes h2 {
+    background-color: #79DCF2;
 }
 
 .preguntasFrecuentes div .iconos {
@@ -175,7 +230,7 @@ main {
     font-size: 3vw;
     color: #551A8B;
     justify-self: center;
-    padding: 1.5vw 12.6vw 2vw 12.6vw;
+    padding: 2vw 10.7vw 0vw 10vw;
 }
 
 .p1 {
@@ -225,7 +280,7 @@ main {
 .mensajeContacto {
     font-size: 3vw;
     text-align: center;
-    line-height: 6vw;
+    line-height: 7vw;
 }
 
 .infoContactanos {
@@ -233,17 +288,18 @@ main {
     flex-direction: row;
     justify-content: center;
     column-gap: 5vw;
-    padding: 2vw;
     margin-bottom: 2vw;
-
-    border: 2px solid #7B77F2;
-    background-color: #79DCF2;
+    text-align: center;
 }
 
 .infoContactanos div {
     display: flex;
     flex-direction: column;
     align-content: center;
+    width: 20vw;
+    padding: 1vw;
+    border: 2px solid #551A8B;
+    background-color: #79DCF2;
 }
 
 .infoContactanos div .iconos {
@@ -257,7 +313,7 @@ main {
 
 .mapa {
     width: 50vw;
-    height: 28.2vw;
+    height: 26.7vw;
 }
 
 .formulario {
@@ -277,6 +333,10 @@ main {
     width: 35vw;
     font-size: 1.5vw;
     margin-bottom: 0.5vw;
+}
+
+input {
+    background-color: white;
 }
 
 .motivo div label {
