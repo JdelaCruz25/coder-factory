@@ -94,10 +94,11 @@ h1, h2, h3, a, label {
             BODY 
     -------------------- */
     main {
-        margin: -7vw 4vw;
+        margin: 0vw 4vw;
     }
     
     .fondoColorV, .formulario {
+        margin-top: -6vw;
         background-color: #AC99F2;
     }
     
