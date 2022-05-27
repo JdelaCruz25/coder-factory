@@ -343,7 +343,8 @@ h1, h2, h3, a, label {
         display: block;
         width: 81vw;
         font-size: 3vw;
-        margin-bottom: 0.5vw;
+        margin-bottom: 1.5vw;
+        border: 1px solid #551A8B;
     }
 
     .formulario div input {
@@ -357,24 +358,34 @@ h1, h2, h3, a, label {
     input, textarea {
         background-color: white;
     }
-    
+
+    .posiblesMotivos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -0.5vw;
+    }
+
     .motivo div label {
         font-size: 3vw;
     }
 
     .radio {
-        margin-left: 8vw;
+        margin-left: 9vw;
     }
 
     .motivo div input {
         width: 3.5vw;
     }
-   
+
     .botones input {
         width: 30vw;
         margin: 2vw 0 0 3vw;
-        font-size: 2vw;
+        font-size: 3.5vw;
         font-weight: 600;
+        padding-bottom: 4.5vw;
+        border: 1px solid black;
     }
 
 
@@ -473,26 +484,28 @@ h1, h2, h3, a, label {
     -------------------- */
     #mainIndex {
         flex-direction: row;
-/*         font-size: 1vw; */
+        font-size: 1vw;
+        margin: 0vw 3vw;
     }
     
     .titulosIndex {
-        font-size: 1.1vw;
-        padding: 2vw;
+        padding: 3vw 2vw;
         margin: 4vw 0.1vw 2.7vw 3vw ;
     }
     
     .titulosIndex h1 {
+        font-size: 2.2vw;
         margin-bottom: 1vw;
     }
     
     .titulosIndex h2 {
+        font-size: 2vw;
         font-weight: 500;
     }
        
     .info p {
         font-size: 1.7vw;
-        margin: 1vw 3vw 3vw 5vw ;
+        margin: 0vw 3vw 3vw 5vw ;
     }
         
     .video video {
@@ -601,12 +614,10 @@ h1, h2, h3, a, label {
     
     #mainContactanos {
         flex-direction: row;
-        column-gap: 3vw;
     }
     
     .mensajeContacto {
         font-size: 3vw;
-        text-align: center;
         line-height: 7vw;
         margin-top: 0vw;
     }
@@ -615,11 +626,9 @@ h1, h2, h3, a, label {
         flex-direction: row;
         column-gap: 5vw;
         margin-bottom: 2vw;
-        text-align: center;
     }
     
     .infoContactanos div {
-        flex-direction: column;
         width: 20vw;
         padding: 1vw;
         border: 2px solid #551A8B;
@@ -652,26 +661,38 @@ h1, h2, h3, a, label {
     }
     
     .formulario div .ingreso {
-        display: block;
         width: 35vw;
         font-size: 1.5vw;
-        margin-bottom: 0.5vw;
     }
-    
+
+    .formulario div input {
+        height: 2vw;
+
+    }
+
+    .formulario div textarea {
+        height: 10vw;
+    }
+   
+    input, textarea {
+        background-color: white;
+    }
+ 
     .motivo div label {
         font-size: 1.4vw;
-        margin-right: 1vw;
+        margin-bottom: 1vw;
     }
     
     .motivo div input {
         margin-left: 0.5vw;
+        width: 1vw;
     }
-    
+   
     .botones input {
         width: 13vw;
-        margin: 2vw 0 0 3vw;
         font-size: 1.5vw;
-        font-weight: 600;
+        padding-bottom: 2vw;
+        margin-top: 0.5vw;
     }
     
     .botones input:hover {
