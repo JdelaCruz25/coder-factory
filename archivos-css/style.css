@@ -209,7 +209,7 @@ h1, h2, h3, a, label {
     .imgPreguntas {
         display: none;
     }
-    
+     
     .preguntasFrecuentes{
         font-size: 0.7vw;
         display: grid;
@@ -475,6 +475,7 @@ h1, h2, h3, a, label {
     }
     
     .boton {
+        font-size: 2vw;
         margin-top: 1.5vw;
     }
 
@@ -543,8 +544,13 @@ h1, h2, h3, a, label {
         text-align: center;
         border: 0px;
     }
+    
+    .fondoPreguntas {
+        display: flex;
+        flex-direction: column;
+    }
    
-    .preguntasFrecuentes{
+    .preguntasFrecuentes {
         font-size: 0.7vw;
         display: grid;
         grid-row-gap: 1vw;
