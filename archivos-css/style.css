@@ -179,29 +179,47 @@ h1, h2, h3, a, label {
     #mainNosotros{
         display: flex;
         flex-direction: column;
+        margin-top: -6vw;
     }
     
     #mainNosotros img {
-        width: 35vw;
+        width: 92vw;
     }
     
     .nosotros {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-bottom: 5vw;
     }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .nosotros div h1, .nosotros div h2 {
+        font-size: 4vw;
+        padding: 3vw 0 0 0;
+    }
+
     .nosotros p, .nuestroTrabajo {
         padding: 2vw;
-        font-size: 2vw;
+        margin-bottom: 6vw;
+        font-size: 4vw;
+        text-align: justify;
+
     }
     
     .nuestroTrabajo {
-        line-height: 3.5vw;
+
+        text-align: start;
+        line-height: 8vw;
     }
     
     .celeste {
-        width: 49.7vw;
-        font-size: 2.5vw;
+        width: 92vw;
+        height: 7vw;
         text-align: center;
         border: 0px;
     }
@@ -211,31 +229,35 @@ h1, h2, h3, a, label {
     }
      
     .preguntasFrecuentes{
-        font-size: 0.7vw;
         display: grid;
         grid-row-gap: 1vw;
         grid-template-areas:
             "p0_ p0_"
-            "p1_ p4_"
-            "p3_ p5_"
-            "p2_ p5_";    
+            "p1_ p1_"
+            "p2_ p2_"
+            "p3_ p3_"
+            "p4_ p4_"
+            "p5_ p5_";    
     }
     
     .preguntasFrecuentes h2 {
+        padding: 4vw 10vw 3vw 10vw;
         background-color: #79DCF2;
     }
     
     .preguntasFrecuentes div .iconos {
-        font-size: 3vw;
+        font-size: 7vw;
     }
     
     .seccionPreguntas {
-        padding: 0vw 2vw;
+        padding: 0vw 4.5vw 5vw 4.5vw;
     }
-    
+   
     .p0 {
         grid-area: p0_;
-        font-size: 3vw;
+        width: 72vw;
+        font-size: 5vw;
+        text-align: center;
         color: #551A8B;
         justify-self: center;
         padding: 2vw 10.7vw 0vw 10vw;
@@ -264,13 +286,19 @@ h1, h2, h3, a, label {
     
     .preguntas {
         display: flex;
-        padding-bottom: 0.5vw;
+        padding-top: 5vw;
     }
     
     .preguntas h3 {
         align-self: center;
-        padding: 0.3vw 0vw 0vw 1vw;
-        font-size: 1.5vw;
+        padding: 0.3vw 0vw 0vw 3vw;
+        font-size: 4vw;
+    }
+
+    .botonNosotros {
+        margin-top: 3vw;
+        padding: 2vw;
+        font-size: 5vw;
     }
     
     
