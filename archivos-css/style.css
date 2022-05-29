@@ -251,7 +251,7 @@ h1, h2, h3, a, label {
     }
    
     .p0 {
-        width: 72vw;
+        width: 70vw;
         font-size: 5vw;
         text-align: center;
         color: #551A8B;
@@ -573,7 +573,7 @@ h1, h2, h3, a, label {
     }
     
     .fondoPreguntas {
-        width: 94vw;
+        width: 92.5vw;
         display: flex;
         flex-direction: row;
     }
@@ -587,7 +587,7 @@ h1, h2, h3, a, label {
             "p1_ p4_"
             "p3_ p5_"
             "p2_ p5_";
-        padding: 0 3vw 0vw 3vw;
+        padding: 0 2vw 0vw 2vw;
     }
     
     .preguntasFrecuentes h2 {
