@@ -17,7 +17,6 @@ h1, h2, h3, a, label {
 }
     
     p {
-        font-size: 5vw;
         font-weight: 500;
     }
     
@@ -122,11 +121,15 @@ h1, h2, h3, a, label {
         margin-top: 2.5vw;
     }
     
-    .boton:hover{
+    .boton:hover {
         background-color: #7B77F2;
         color: black;
     }
     
+    .boton:active {
+        box-shadow: inset 5px 5px 40px 10px;
+    }
+
     .iconos {
         color: #551A8B;
     }
@@ -229,15 +232,9 @@ h1, h2, h3, a, label {
     }
      
     .preguntasFrecuentes{
-        display: grid;
+        display: flex;
+        flex-direction: column;
         grid-row-gap: 1vw;
-        grid-template-areas:
-            "p0_ p0_"
-            "p1_ p1_"
-            "p2_ p2_"
-            "p3_ p3_"
-            "p4_ p4_"
-            "p5_ p5_";    
     }
     
     .preguntasFrecuentes h2 {
@@ -254,7 +251,6 @@ h1, h2, h3, a, label {
     }
    
     .p0 {
-        grid-area: p0_;
         width: 72vw;
         font-size: 5vw;
         text-align: center;
@@ -263,25 +259,8 @@ h1, h2, h3, a, label {
         padding: 2vw 10.7vw 0vw 10vw;
     }
     
-    .p1 {
-        grid-area: p1_;
-    }
-    
     .p2 {
-        grid-area: p2_;
         padding-bottom: 1vw;
-    }
-    
-    .p3 {
-        grid-area: p3_;
-    }
-    
-    .p4 {
-        grid-area: p4_;
-    }
-    
-    .p5 {
-        grid-area: p5_;
     }
     
     .preguntas {
@@ -416,6 +395,10 @@ h1, h2, h3, a, label {
         border: 1px solid black;
     }
 
+    .botones input:active {
+        box-shadow: inset 2px 2px 20px 5px;
+    }
+
 
 /* -------------------- 
     APTO TABLETS 
@@ -434,7 +417,7 @@ h1, h2, h3, a, label {
             NOSOTROS 
     -------------------- */
     .imgPreguntas {
-        display: block;
+        display: inline;
     }
 }
 
@@ -546,17 +529,33 @@ h1, h2, h3, a, label {
             NOSOTROS 
     -------------------- */
     #mainNosotros{
+        margin: 3vw;
         flex-direction: column;
     }
     
     #mainNosotros img {
         width: 35vw;
     }
+
+    .descripcionNosotros {
+        margin-bottom: 6vw;
+    }
     
     .nosotros {
         flex-direction: row;
-        margin-bottom: 5vw;
+        justify-content: center;
     }
+
+    .nosotros div {
+        width: 55vw;
+        height: 22vw;
+    }
+
+    .nosotros div h1, .nosotros div h2 {
+        font-size: 2.5vw;
+        padding: 1.5vw 2.7vw;
+    }
+
     .nosotros p, .nuestroTrabajo {
         padding: 2vw;
         font-size: 2vw;
@@ -567,30 +566,36 @@ h1, h2, h3, a, label {
     }
     
     .celeste {
-        width: 49.7vw;
+        width: 50vw;
         font-size: 2.5vw;
         text-align: center;
         border: 0px;
     }
     
     .fondoPreguntas {
+        width: 94vw;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
    
     .preguntasFrecuentes {
         font-size: 0.7vw;
         display: grid;
-        grid-row-gap: 1vw;
+        grid-column-gap: 3vw;
         grid-template-areas:
             "p0_ p0_"
             "p1_ p4_"
             "p3_ p5_"
-            "p2_ p5_";    
+            "p2_ p5_";
+        padding: 0 3vw 0vw 3vw;
     }
     
     .preguntasFrecuentes h2 {
-        background-color: #79DCF2;
+        height: 5vw;
+        width: 50vw;
+        padding: 0;
+        line-height: 6vw;
+        text-align: center;
     }
     
     .preguntasFrecuentes div .iconos {
@@ -598,15 +603,14 @@ h1, h2, h3, a, label {
     }
     
     .seccionPreguntas {
-        padding: 0vw 2vw;
+        width: 25vw;
+        padding: 0vw;
     }
     
     .p0 {
         grid-area: p0_;
         font-size: 3vw;
-        color: #551A8B;
-        justify-self: center;
-        padding: 2vw 10.7vw 0vw 10vw;
+        padding: 0vw;
     }
     
     .p1 {
@@ -615,9 +619,9 @@ h1, h2, h3, a, label {
     
     .p2 {
         grid-area: p2_;
-        padding-bottom: 1vw;
+        padding-bottom: 2vw;
     }
-    
+
     .p3 {
         grid-area: p3_;
     }
@@ -631,8 +635,7 @@ h1, h2, h3, a, label {
     }
     
     .preguntas {
-        display: flex;
-        padding-bottom: 0.5vw;
+        padding-top: 2vw;
     }
     
     .preguntas h3 {
@@ -728,12 +731,10 @@ h1, h2, h3, a, label {
         padding-bottom: 2vw;
         margin-top: 0.5vw;
     }
-    
+ 
     .botones input:hover {
-        background-color: #551A8B;
-        color: white;
+        background-color: #79DCF2;
     }
-}
 
 
 
