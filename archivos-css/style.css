@@ -405,20 +405,30 @@ h1, h2, h3, a, label {
 -------------------- */
 @media screen and (min-width: 768px) {
     
-    nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    header {
+        margin-bottom: 5vw;
+    }
+
+    .lista li {
+        font-size: 4.5vw;
+    }
+
+    .boton, .celeste {
+        font-size: 4vw;
+        padding-top: 2.5vw;
     }
     
+        
 
     /* -------------------- 
             NOSOTROS 
     -------------------- */
-    .imgPreguntas {
-        display: inline;
+    .preguntasFrecuentes h2 {
+        height: 5vw;
+        width: 72vw;
+
     }
+
 }
 
 
@@ -443,6 +453,13 @@ h1, h2, h3, a, label {
     #derechos {
         font-size: 1.5vw;
         padding-left: 1vw;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
     
     .lista li {
@@ -537,6 +554,10 @@ h1, h2, h3, a, label {
         width: 35vw;
     }
 
+    #mainNosotros .seccionCeleste {
+        width: 92.5vw;
+    }
+
     .descripcionNosotros {
         margin-bottom: 6vw;
     }
@@ -566,7 +587,7 @@ h1, h2, h3, a, label {
     }
     
     .celeste {
-        width: 50vw;
+        width: 49.6vw;
         font-size: 2.5vw;
         text-align: center;
         border: 0px;
@@ -576,6 +597,10 @@ h1, h2, h3, a, label {
         width: 92.5vw;
         display: flex;
         flex-direction: row;
+    }
+
+    .imgPreguntas {
+        display: inline;
     }
    
     .preguntasFrecuentes {
