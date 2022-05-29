@@ -87,7 +87,7 @@ h1, h2, h3, a, label {
         background-color: #6bccf1;
         color: white;
     }
-    
+
     
     /* -------------------- 
             BODY 
@@ -107,6 +107,8 @@ h1, h2, h3, a, label {
         display: flex;
         justify-content: center;
         align-content: center;
+        animation: fadeInUp;
+        animation-duration: 2s;
     }
     
     .boton, .celeste {
@@ -119,6 +121,7 @@ h1, h2, h3, a, label {
     
     .boton {
         margin-top: 2.5vw;
+        border-radius: 5vw;
     }
     
     .boton:hover {
@@ -140,6 +143,8 @@ h1, h2, h3, a, label {
     #mainIndex {
         display: flex;
         flex-direction: column;
+        animation: fadeIn;
+        animation-duration: 1s;
     }
     
     .titulosIndex {
@@ -193,12 +198,16 @@ h1, h2, h3, a, label {
         display: flex;
         flex-direction: column;
         margin-bottom: 5vw;
+        animation: fadeInBottomRight;
+        animation-duration: 3s;
     }
 
     .reverse {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        animation: fadeInBottomLeft;
+        animation-duration: 2s;
     }
 
     .nosotros div h1, .nosotros div h2 {
@@ -225,6 +234,11 @@ h1, h2, h3, a, label {
         height: 7vw;
         text-align: center;
         border: 0px;
+    }
+
+    .fondoPreguntas {
+        animation: fadeInUp;
+        animation-duration: 2s;
     }
 
     .imgPreguntas {
@@ -290,8 +304,10 @@ h1, h2, h3, a, label {
         flex-direction: column;
         column-gap: 3vw;
         justify-content: center;
+        animation: fadeIn;
+        animation-duration: 2s;
     }
-    
+   
     .mensajeContacto {
         font-size: 4vw;
         text-align: center;
@@ -316,6 +332,7 @@ h1, h2, h3, a, label {
         padding: 2vw;
         border: 1px solid #551A8B;
         background-color: #79DCF2;
+        border-radius: 1vw;
     }
     
     .infoContactanos div .iconos {
@@ -393,6 +410,7 @@ h1, h2, h3, a, label {
         font-weight: 600;
         padding-bottom: 4.5vw;
         border: 1px solid black;
+        border-radius: 1vw;
     }
 
     .botones input:active {
@@ -418,7 +436,6 @@ h1, h2, h3, a, label {
         padding-top: 2.5vw;
     }
     
-        
 
     /* -------------------- 
             NOSOTROS 
@@ -428,7 +445,6 @@ h1, h2, h3, a, label {
         width: 72vw;
 
     }
-
 }
 
 
@@ -446,6 +462,11 @@ h1, h2, h3, a, label {
     /* -------------------- 
         HEADER Y FOOTER
     -------------------- */
+
+    header {
+        margin-bottom: 0vw;
+    }
+
     .logo {
         width: 8vw;
     }
@@ -677,7 +698,7 @@ h1, h2, h3, a, label {
     #mainContactanos {
         flex-direction: row;
     }
-    
+       
     .mensajeContacto {
         font-size: 3vw;
         line-height: 7vw;
@@ -742,7 +763,6 @@ h1, h2, h3, a, label {
  
     .motivo div label {
         font-size: 1.4vw;
-        margin-bottom: 1vw;
     }
     
     .motivo div input {
